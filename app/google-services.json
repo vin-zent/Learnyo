@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "675405029655",
+    "firebase_url": "https://learnyo-default-rtdb.firebaseio.com",
+    "project_id": "learnyo",
+    "storage_bucket": "learnyo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675405029655:android:f9ea6055ae1310b3371752",
+        "android_client_info": {
+          "package_name": "com.careerpath.learnyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675405029655-b9hc2n3cv3i3c46mm4oqs6vkocfpgs5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1t3g7FHCuv30o-0CmgxSi_XCWEvS5gz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675405029655-b9hc2n3cv3i3c46mm4oqs6vkocfpgs5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
