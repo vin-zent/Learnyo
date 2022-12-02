@@ -6,99 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".JustSelectActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to "
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learnyo"
+            android:textColor="@color/orange"
+            android:textSize="32dp" />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="56dp"
-                android:orientation="horizontal">
+    </LinearLayout>
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Welcome to "
-                    android:textColor="@color/black"
-                    android:textSize="32dp" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/justimg"
+        android:layout_width="400dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:src="@drawable/preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Learnyo"
-                    android:textColor="@color/orange"
-                    android:textSize="32dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
 
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/justimg" />
 
-            </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/learnStudent"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="400dp"
-                android:layout_height="320dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:src="@drawable/buljustimg" />
+        android:backgroundTint="@color/orange"
+        android:elevation="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="8"
+        android:text="Learn on Learnyo"
+        android:textColor="@color/white"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/learnStudent"
-                android:layout_width="340dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="42dp"
-                android:backgroundTint="@color/orange"
-                android:elevation="10dp"
-                android:shadowColor="#000000"
-                android:shadowDx="0"
-                android:shadowDy="8"
-                android:text="Learn on Learnyo"
-                android:textColor="@color/white"
-                app:cornerRadius="6dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/teach"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Teach on Learnyo"
+        android:textColor="@color/orange"
+        app:cornerRadius="6dp"
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="340dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:backgroundTint="@color/white"
-                android:elevation="10dp"
-                android:shadowColor="#000000"
-                android:shadowDx="0"
-                android:shadowDy="8"
-                android:text="Teach on Learnyo"
-                android:textColor="@color/orange"
-                app:cornerRadius="6dp"
-                app:strokeColor="@color/orange"
-                app:strokeWidth="2dp" />
-
-        </LinearLayout>
-
-    </ScrollView>
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learnStudent"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="2dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.careerpath.learnyo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <compatible-screens>
 
@@ -36,11 +37,35 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/bluesignin"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/circlelogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learnyo">
+        <activity
+            android:name=".learnonleranyo.TopicContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".learnonleranyo.ContentofCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachonlearnyo.CourseContentaddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".learnonleranyo.CoursedescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachonlearnyo.TopicAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachonlearnyo.AddnewCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachonlearnyo.teacherloginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachonlearnyo.TeachHomeActivity"
+            android:exported="false" />
         <activity
             android:name=".learnonleranyo.HomeActivity"
             android:exported="false" />
@@ -53,7 +78,6 @@
         <activity
             android:name=".learnonleranyo.LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".JustSelectActivity"
             android:exported="false" />

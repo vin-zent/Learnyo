@@ -4,11 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import com.careerpath.learnyo.Utils.FirebaseUtils
 import com.careerpath.learnyo.learnonleranyo.HomeActivity
 import com.careerpath.learnyo.learnonleranyo.LoginActivity
+import com.careerpath.learnyo.teachonlearnyo.TeachHomeActivity
+import com.google.android.gms.auth.api.signin.GoogleSignIn
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,20 +34,28 @@ class MainActivity : AppCompatActivity() {
             checkUser()
 
 
-        }, 2000)
+        }, 1000)
 
 
     }
     private fun checkUser() {
-        /*
-        if(FirebaseUtils.firebaseUser?.isEmailVerified == true){
-            val intent = Intent(this, HomeActivity::class.java)
+
+//        if(FirebaseUtils.firebaseUser?.isEmailVerified == true){
+//            val intent = Intent(this, HomeActivity::class.java)
+//            Log.d("tag","its in email")
+//            startActivity(intent)
+//
+//            finish()
+
+        if(GoogleSignIn.getLastSignedInAccount(this) != null) {
+            val intent = Intent(this, TeachHomeActivity::class.java)
+            Log.d("tag","its in google")
+
             startActivity(intent)
             finish()
-        }
-*/
-        if(FirebaseUtils.firebaseUser != null){
+        }else if(FirebaseUtils.firebaseUser != null){
             val intent = Intent(this, HomeActivity::class.java)
+            Log.d("tag","its in email")
             startActivity(intent)
             finish()
         }

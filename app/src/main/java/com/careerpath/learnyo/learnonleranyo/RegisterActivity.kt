@@ -223,13 +223,13 @@ class RegisterActivity : AppCompatActivity() {
                     progressDialog.setMessage("Save User Data")
 
 
-                    val user = com.careerpath.learnyo.Model.User(fullname,"",firebaseAuth.uid.toString(),emailV,"","")
+                    val user = com.careerpath.learnyo.learnonleranyo.Model.User(fullname,"",firebaseAuth.uid.toString(),emailV,"","")
 
                     storeUserData(user)
 
                     val intent = Intent(this, HomeActivity::class.java)
                     startActivity(intent)
-                    finish()
+
                 } else {
                     progressDialog.dismiss()
                     Toast.makeText(this, "failed to Authenticate !", Toast.LENGTH_SHORT).show()
@@ -240,7 +240,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
 
-    private fun storeUserData(user: com.careerpath.learnyo.Model.User) = CoroutineScope(Dispatchers.IO).launch {
+    private fun storeUserData(user: com.careerpath.learnyo.learnonleranyo.Model.User) = CoroutineScope(Dispatchers.IO).launch {
         try {
 
             userCollectionRef.document(firebaseAuth.uid.toString()).set(user).await()

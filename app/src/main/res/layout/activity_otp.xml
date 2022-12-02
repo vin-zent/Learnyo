@@ -23,10 +23,17 @@
             android:contentDescription="back_button"
             android:src="@drawable/ic_baseline_keyboard_backspace_24" />
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_otp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="12dp"
             android:gravity="center"
             android:fontFamily="@font/poppinssemibold"
             android:text="Verify Phone"
@@ -68,130 +75,148 @@
             android:orientation="horizontal">
 
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp1"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusDown="@id/et_otp2"
-                android:nextFocusForward="@id/et_otp2"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:imeOptions="actionNext"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusDown="@id/et_otp2"-->
+<!--                android:nextFocusForward="@id/et_otp2"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp2"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp1"
-                android:nextFocusDown="@id/et_otp3"
-                android:nextFocusForward="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:imeOptions="actionNext"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusLeft="@id/et_otp1"-->
+<!--                android:nextFocusDown="@id/et_otp3"-->
+<!--                android:nextFocusForward="@id/et_otp3"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp3"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp2"
-                android:nextFocusDown="@id/et_otp4"
-                android:nextFocusForward="@id/et_otp4"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:imeOptions="actionNext"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusLeft="@id/et_otp2"-->
+<!--                android:nextFocusDown="@id/et_otp4"-->
+<!--                android:nextFocusForward="@id/et_otp4"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp4"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionGo"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:imeOptions="actionGo"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusLeft="@id/et_otp3"-->
+<!--                android:nextFocusDown="@id/et_otp5"-->
+<!--                android:nextFocusForward="@id/et_otp5"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp5"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionGo"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:imeOptions="actionGo"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusLeft="@id/et_otp4"-->
+<!--                android:nextFocusDown="@id/et_otp6"-->
+<!--                android:nextFocusForward="@id/et_otp6"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp6"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_otp6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_item_otp_view"-->
+<!--                android:backgroundTint="#93D2F3"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:imeOptions="actionNext"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:nextFocusLeft="@id/et_otp5"-->
+<!--                android:textColor="#1C1C1C"-->
+<!--                android:textColorHint="#8B8B8B"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="4dp"-->
+<!--                tools:background="@drawable/bg_item_otp_view_error"-->
+<!--                tools:ignore="HardcodedText" />-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_weight="1"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp1"
-                android:nextFocusDown="@id/et_otp3"
-                android:nextFocusForward="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+                android:hint="Code"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="#4E4E4E">
+
+                <requestFocus />
+            </com.google.android.material.textfield.TextInputEditText>
+
 
         </LinearLayout>
         <LinearLayout
@@ -199,6 +224,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
+
             android:layout_margin="16dp">
             <EditText
                 android:layout_width="wrap_content"
@@ -217,8 +243,15 @@
                 android:background="@null"
                 android:text="Request Again"/>
         </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/loginStudent"
+            android:id="@+id/verifybtn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -233,6 +266,7 @@
             android:text="verify and countinue"
             android:textColor="@color/white"
             app:cornerRadius="4dp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.careerpath.learnyo.Model
+package com.careerpath.learnyo.learnonleranyo.Model
 
 data class User(val userName: String = "",
                 val userImage:String = "",

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".teachonlearnyo.teacherloginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/googleauth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="TEACH ON LEARNYO"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  "
+        android:textAlignment="center"
+        android:textColor="@color/textAd"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googlelogin"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/whit"
+        android:drawableLeft="@drawable/ic_google"
+        android:elevation="57dp"
+        android:paddingLeft="32dp"
+        android:text="Sign in with google"
+        android:textColor="@color/black"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
